@@ -1,0 +1,124 @@
+html,body{
+    margin: 0 !important;
+    padding: 0;
+    font-size: 15px;
+    .container-fluid{
+        background-color: hsl(233, 47%, 7%);
+
+    }
+    *{
+        box-sizing: border-box;
+    }
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+@media (max-width:400px) {
+    .box{
+        width: 350px;
+        height: 700px;
+    }
+    .bottom{
+        background-color: hsl(244, 38%, 16%);
+        color: hsl(0, 0%, 100%);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        .text{
+            strong{
+                color: hsla(0, 0%, 100%, 0.75);
+            }
+            span{
+                color: hsl(277, 64%, 61%);
+            }
+        }
+        .statistics{
+            width: 85%;
+            strong{
+                color: hsla(0, 0%, 100%, 0.6);
+            }
+        }
+    }
+    .top{
+        overflow: hidden;
+        position: relative;
+        height: 40%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            left: 0;
+            top: 0;
+        }
+        .layer{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            left: 0;
+            top: 0;
+            background-color: hsla(277, 64%, 61%, 0.323);
+        }
+    }
+}
+@media (min-width:1000px) {
+    .box{
+        width: 900px;
+        height: 400px;
+    }
+    .bottom{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        width: 80%;
+        background-color: hsl(244, 38%, 16%);
+        color: hsl(0, 0%, 100%);
+        .text{
+            strong{
+                color: hsla(0, 0%, 100%, 0.75);
+            }
+            span{
+                color: hsl(277, 64%, 61%);
+            }
+        }
+        .statistics{
+            width: 85%;
+            strong{
+                color: hsla(0, 0%, 100%, 0.6);
+            }
+        }
+    }
+    .top{
+        position: relative;
+        overflow: hidden;
+        width: 20%;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        text-align: left;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            left: 0;
+            top: 0;
+        }
+        .layer{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            left: 0;
+            top: 0;
+            background-color: hsla(277, 64%, 61%, 0.323);
+        }
+    }
+}
